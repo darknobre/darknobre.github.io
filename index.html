@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs xr-mode-ui="enabled: false">
-      <!-- Câmera -->
-      <a-entity camera position="0 0 0">
-      </a-entity>
-      <a-image src="./teste.jpg" position="0 0 -4"></a-image>
-    </a-scene>
-  </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de fundo completa</title>
+    <style>
+        /* Resetar margens e preenchimento padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definir o corpo da página para ocupar toda a altura da tela */
+        body, html {
+            height: 100%;
+        }
+
+        /* Estilizar o corpo com a imagem de fundo */
+        body {
+            background-image: url('galo.png'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+        }
+    </style>
+</head>
+<body>
+</body>
 </html>
